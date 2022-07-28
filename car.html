@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+</head>
+<body>
+    <h1>carrinho de compras</h1>    
+
+    Codigo do produto: 
+    <div class="produto"></div>
+    <br/>
+    <a href="index.html" target="_parent">voltar</a>
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('p_code');
+        const produdo = document.querySelector(".produto");
+
+        produdo.innerText = myParam
+
+    </script>
+</body>
+</html>
